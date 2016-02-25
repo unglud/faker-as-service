@@ -11,6 +11,7 @@ class FakeThis{
 
 
 	function __construct($args){
+		if(empty($args)) $args = 'text';
 		$this->setOptions($args);
 	}
 
