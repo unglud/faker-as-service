@@ -142,7 +142,7 @@ class FakeThis{
 	}
 }
 
-$user_data = $_REQUEST['user_data'];
+$user_data = array_key_exists('user_data', $_REQUEST)?$_REQUEST['user_data']:'text';
 $faker = new FakeThis($user_data);
 
  header("Access-Control-Allow-Origin: *");
