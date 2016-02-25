@@ -12,11 +12,11 @@ This service for easy generation of fake data in your sites. It supports Cross-O
 You can find the latest phar on the [releases page](https://github.com/bit3/faker-cli/releases).
 
 ```bash
-curl -i -H “Accept: application/json” -H “Content-Type: application/json” -X GET https://faker.apus.ag?user_data=text%20500
+curl -X GET http://faker.apus.ag\?user_data\=text%20500
 ```
 
 ```javascript
-$.getJSON( “https://faker.apus.ag?user_data=text%20500”, 	function( data ) {console.log(data.data)}
+$.getJSON("http://faker.apus.ag?user_data=text%20500", 	function( data ) {console.log(data)})
 ```
 
 ### Parameters and arguments
