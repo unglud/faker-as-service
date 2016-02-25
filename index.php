@@ -11,7 +11,6 @@ class FakeThis{
 
 
 	function __construct($args){
-		if(empty($args)) $args = 'text';
 		$this->setOptions($args);
 	}
 
@@ -82,7 +81,7 @@ class FakeThis{
 
 
        	$my_arg = trim(str_replace($this->name, '', $my_arg));
-       	
+       	if(empty($my_arg)) $my_arg = 'text';
 
 		$new_argv = explode(' ', $my_arg);
 
