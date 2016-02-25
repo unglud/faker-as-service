@@ -21,9 +21,9 @@ $.getJSON("http://faker.apus.ag?user_data=text%20500", 	function( data ) {consol
 
 ```
 ?user_data=
- —locale    # The locale to used. (default: “en_US”)
- —seed      # The generators seed.
- —count     # The count of generated data. (default: 1)
+ --locale    # The locale to used. (default: “en_US”)
+ --seed      # The generators seed.
+ --count     # The count of generated data. (default: 1)
  <type>     # The data type to generate (e.g. “randomDigit”, “words”, “name”, “city”)
  <args1>..<argsN> # Arguments for the type, e.g. “words 5” will generate 5 words.
 ```
@@ -48,7 +48,7 @@ omnis
 ### Multi value generator example
 
 ```
-http://faker.apus.ag?user_data=—count 5 words 2
+http://faker.apus.ag?user_data=--count 5 words 2
 
 culpa,consequatur
 quisquam,recusandae
