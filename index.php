@@ -38,10 +38,14 @@ class FakeThis{
 		if ($seed) {
 			$faker->seed($seed);
 		}
-		for ($i = 0; $i < $count; $i++) {
-			$tmp = $faker->format($type, $args);
-			if(is_array($tmp)) $tmp = implode(' ', $tmp);
-			$data[] = $tmp;
+		try{
+			for ($i = 0; $i < $count; $i++) {
+				$tmp = $faker->format($type, $args);
+				if(is_array($tmp)) $tmp = implode(' ', $tmp);
+				$data[] = $tmp;
+			}
+		} catch(Exception $e){
+			return $this->error($e->getMessage());
 		}
 
 		//var_dump($data);die;
