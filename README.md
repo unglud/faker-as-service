@@ -9,8 +9,6 @@ This service for easy generation of fake data in your sites. It supports Cross-O
 
 ### As Hosted version
 
-You can find the latest phar on the [releases page](https://github.com/bit3/faker-cli/releases).
-
 ```bash
 curl -X GET http://faker.apus.ag\?user_data\=text%20500
 ```
