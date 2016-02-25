@@ -59,4 +59,4 @@ vero,omnia
 
 ## License
 
-Faker Command Line Tool is released under the MIT Licence. See the bundled LICENSE file for details.
+Faker as Service is released under the MIT Licence. See the bundled LICENSE file for details.
